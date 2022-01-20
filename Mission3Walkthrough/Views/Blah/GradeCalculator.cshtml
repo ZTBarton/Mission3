@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model GradeCalculatorModel
+
+<h2>Grade Calculator:</h2>
+<form method="post" id="myForm">
+    @*<label>Assignments:</label>
+        <input id="assignmentGrade" asp-for="assignmentGrade" max="100" min="0" />
+        <br />
+        <label>Group Projects:</label>
+        <input id="groupGrade" asp-for="groupGrade" max="100" min="0" />
+        <br />
+        <label>Quizzes:</label>
+        <input id="quizGrade" asp-for="quizGrade" max="100" min="0" />
+        <br />
+        <label>Exams:</label>
+        <input id="examGrade" asp-for="examGrade" max="100" min="0" />
+        <br />
+        <label>INTEX:</label>
+        <input id="intexGrade" asp-for="intexGrade" max="100" min="0" />
+        <br />
+        <input id="btn" type="submit" value="Calculate" />*@
+    <label>Assignments:</label>
+    <input id="assignmentGrade" asp-for="assignmentGrade" />
+    <br />
+    <label>Group Projects:</label>
+    <input id="groupGrade" asp-for="groupGrade" />
+    <br />
+    <label>Quizzes:</label>
+    <input id="quizGrade" asp-for="quizGrade" />
+    <br />
+    <label>Exams:</label>
+    <input id="examGrade" asp-for="examGrade" />
+    <br />
+    <label>INTEX:</label>
+    <input id="intexGrade" asp-for="intexGrade" />
+    <br />
+    <input id="btn" type="submit" value="Calculate" />
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<script src="js/gradeCalculator.js"></script>
